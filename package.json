@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "back:run": "json-server --watch database/db.json --port 5000"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -13,7 +14,8 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0"
+    "@vue/compiler-sfc": "^3.0.0",
+    "json-server": "^0.16.3"
   },
   "_id": "vue-crash-course@0.1.0",
   "readme": "ERROR: No README data found!"

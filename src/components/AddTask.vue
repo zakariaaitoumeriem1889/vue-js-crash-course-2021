@@ -11,7 +11,7 @@
       />
     </div>
     <div class="form-control">
-      <label for="day">Date & Time</label>
+      <label for="day">Day & Time</label>
       <input
         type="text"
         id="day"
@@ -20,7 +20,7 @@
         placeholder="Add Day & Time"
       />
     </div>
-    <div class="form-control">
+    <div class="form-control form-control-check">
       <label for="reminder">Set Reminder</label>
       <input type="checkbox" id="reminder" v-model="reminder" name="reminder" />
     </div>
@@ -33,7 +33,7 @@ export default {
   name: "AddTask",
   data() {
     return {
-      text: "Text",
+      text: "",
       day: "",
       reminder: false,
     };
@@ -46,7 +46,7 @@ export default {
         return;
       }
       const newTask = {
-        // id: Math.floor(Math.random() * 10000),
+        // id: Math.floor(Math.random() * 100000),
         text: this.text,
         day: this.day,
         reminder: this.reminder,
